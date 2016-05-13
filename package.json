@@ -36,7 +36,7 @@
         "test": "IP=0.0.0.0 PORT=3030 mocha --timeout 5000 tests/*_test.js",
         "dev": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
         "lite": "lite-server",
-        "postinstall": "[ \"$NODE_ENV\" != production ] && typings install",
+        "xpostinstall": "[ \"$NODE_ENV\" != production ] && typings install",
         "tsc": "tsc",
         "tsc:w": "tsc -w",
         "typings": "typings"
